@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo"><img src="/imagenes/logo_200x200.png" alt=""></div>
+      <div class="nav-list">
+        <ul class="list-nav">
+          <li><a href="index.html"> inicio</a></li>
+          <li><a href="faq.html"> Preguntas y Respuestas</a></li>
+          <li><a href="productos.html"> Productos</a></li>
+          <li><a href="nosotros.html"> Nosotros</a></li>
+          <li><a href="contacto.html"> Contacto</a></li>
+        </ul>
+    </div>
+    </nav>
+  </header>
+
+    <form action="" class="form-contact">
+        <fieldset class="form--fieldset">
+            <h1 class="form--title">Formulario de contacto:</h1>
+            <label for="nombre" class="form--label">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="name-input">
+            
+            <label for="apellido" class="form--label">Apellido:</label>
+            <input type="text" name="apellido" id="appellido" class="apellido-input">
+            
+            <label for="mail" class="form--label">Mail:</label>
+            <input type="email" name="email" id="email" class="mail-input">
+            <br>
+            <label for="opcion" class="form--label">Elija el asunto del mensaje</label>
+            <br>
+            <select name="asunto" id="asunto" class="asunto-input">
+                <option value="L">No llega mi pedido</option>
+                <option value="M">Garantia</option>
+                <option value="S">Devoluciones</option>
+            </select>
+            <br>
+            <label for="mensaje" class="form--label">Escriba su mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar formulario" class="send--button">
+            <br>
+            <input type="reset" value="Limpiar formulario" class="clean--button">
+
+            <br>
+            <br>
+
+            <label class="form--label">Acepta los terminos y condiciones</label>
+            <input type="checkbox" name="acepta" value="1">
+
+        </fieldset>
+    </form>
+
+    <footer class="footer-page">
+      <div class="container">
+        <h2>
+          visitanos en nuestras redes sociales!
+        </h2>
+          <li><a href="###"> Instagram </a></li>
+          <li><a href="faq.html"> Facebook </a></li>
+          <li><a href="productos.html"> Pinterest </a></li>
+          <li><a href="nosotros.html"> Twitter </a></li>
+          <li><a href="contacto.html"> Tiktok</a></li>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,356 @@
+/*
+INDEX, NAV & FOOTER
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+
+.logo img{
+    width: 100%;
+    height: 70%;
+    margin-top: 20px;
+}
+
+.nav-list {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list ul {
+    align-self: center;
+}
+
+.nav-list li {
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.list-nav {
+    display: flex;
+    align-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    height: 7rem;
+}
+
+.nav li{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.nav a {
+    color: rgb(14, 32, 131);
+    text-decoration: none;
+}
+
+
+.inicio-img .main-img {
+    background-image: image();
+    width: 100%;
+    height: 100%;
+}
+
+.inicio-img {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+.H1-dentro-img {
+    color: rgb(231, 233, 240);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.initial-vid {
+    display: flex;
+    justify-content: center;
+}
+
+
+.h2-parrafo {
+    padding: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.initial__h2 , .initial__p{
+    text-align: center;
+}
+
+.footer-page li a{
+    color: azure;
+}
+
+.footer-page li{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.footer-page {
+    margin-top: 75px;
+    background-color: #16183d;
+    text-align: center;
+}
+
+.faq {
+    margin-top: 340px;
+}
+.prod {
+    margin-top: 360px;
+}
+
+
+/*
+
+FAQ PAGE STYLE-----------------------------------------------------------------
+
+*/
+
+.faq-inicio-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+}
+
+.inicio--main-img , .h1--dentro-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio--main-img img{
+    width: 100%;
+    height: 36rem;
+    border-radius: 30px;
+}
+
+.h1--dentro-img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.h1--dentro-img ol a{
+    text-decoration: none;
+}
+
+.list , .list--items {
+    margin-top: 50px;
+}
+
+.question-pic {
+    width: 100%;
+}
+
+.question-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+.answer-area--article h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.answer-area--article p{
+    text-align: center;
+}
+
+.answer-area--article {
+    margin-top: 20px;
+    border: solid;
+    border-color: #16183d;
+    border-radius: 30px;
+}
+
+
+
+/*
+
+PRODUCTOS PAGE STYLE-----------------------------------------------------------------
+
+*/
+
+
+.main-img img{
+    width: 100%;
+    height: 40em;
+}
+
+.section-absolute {
+    color: rgb(231, 233, 240);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.list-prods ol a{
+    color: aqua;
+}
+
+.prod-h1 h1 , .prod-subt h3{
+    color: aqua;
+}
+
+.prod-h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.prod-h1 h1{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.prod-subt {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.list-prods a {
+    text-decoration: none;
+}
+
+.list-prods ol {
+    margin-top: 10px;
+}
+
+.list-prods {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+}
+
+.section-separator {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.grid-cont {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+.grid--item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  
+.grid--item img {
+    order: -1;
+    align-self: center;
+  }
+  
+.grid--item button {
+    margin-top: auto;
+    background: black;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+/*
+
+NOSOTROS PAGE STYLE-----------------------------------------------------------------
+
+*/
+
+.main-img img{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.h1-dentro-img {
+    color: rgb(231, 233, 240);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mission--p h2, p{
+    text-align: center;
+}
+
+.mission--p h2, p{
+    text-align: center;
+}
+
+.historia--p h2, p{
+    text-align: center;
+}
+
+/*
+
+CONTACTO PAGE STYLE-----------------------------------------------------------------
+
+*/
+
+.form-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.form--fieldset {
+    background-color: rgb(31, 32, 33);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.name-input , .apellido-input, .mail-input, .asunto-input{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.send--button, .clean--button {
+    width: 30%;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+.form--label, .form--title {
+    color: rgb(188, 248, 240);
+}
