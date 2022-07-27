@@ -2,13 +2,27 @@
 INDEX, NAV & FOOTER
 */
 
+body {
+    position: relative;
+    padding-bottom: 14em;
+    width: 100%;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+.index-envoltorio {
+    width: 100%;
+    height: 100%;
+}
 
+.header , nav {
+    width: 100%;
+} 
 
 header {
     background-color: #ffffff;
@@ -19,49 +33,16 @@ header {
 }
 
 
-.logo img{
+.logo-div {
+    width: 50%;
+}
+
+.navbar-brand {
+    width: 60%;
+}
+
+.logo-div .navbar-brand img{
     width: 100%;
-    height: 70%;
-    margin-top: 20px;
-}
-
-.nav-list {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.nav-list ul {
-    align-self: center;
-}
-
-.nav-list li {
-    border: 2px solid black;
-    border-radius: 1rem;
-}
-
-.list-nav {
-    display: flex;
-    align-content: center;
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    height: 7rem;
-}
-
-.nav li{
-    display: inline-block;
-    margin: 10px;
-    padding: 20px;
-}
-
-
-.nav a {
-    color: rgb(14, 32, 131);
-    text-decoration: none;
 }
 
 
@@ -87,9 +68,19 @@ header {
     transform: translate(-50%, -50%);
 }
 
+.H1-dentro-img h1 {
+    font-size: 2rem;
+} 
+
 .initial-vid {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.initial-vid iframe{
+    width: 70%;
+    height: 100%;
 }
 
 
@@ -115,10 +106,16 @@ header {
 }
 
 
-.footer-page {
-    margin-top: 75px;
+.footer-page .container-footer{
+    position: absolute;
     background-color: #16183d;
     text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-page .container-footer h2 {
+    color: #ffffff;
 }
 
 .faq {
@@ -129,6 +126,64 @@ header {
 }
 
 
+nav {
+    grid-area: nav;
+}
+
+.inicio-img {
+    grid-area: imagen-inicio;
+}
+
+.h2-parrafo {
+    grid-area: ventajas;
+}
+
+.initial-vid {
+    grid-area: video-final;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.index-envoltorio {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "nav"
+    "imagen-inicio"
+    "ventajas"
+    "video-final"
+    "footer";
+}
+
+@media (min-width:500px){
+    .h2-parrafo {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+    .H1-dentro-img h1 {
+        font-size: 3rem;
+    }
+    .initial-vid iframe {
+        width: 50%;
+        height: 100%;
+    }
+    .initial-vid {
+        height: 15rem;
+    }
+}
+
+@media (min-width:760px){
+    .logo-div {
+        width: 15%;
+    }
+
+}
+
+
+
+
 /*
 
 FAQ PAGE STYLE-----------------------------------------------------------------
@@ -137,7 +192,8 @@ FAQ PAGE STYLE-----------------------------------------------------------------
 
 .faq-inicio-img {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(1fr));
 }
 
 .inicio--main-img , .h1--dentro-img {
@@ -145,9 +201,18 @@ FAQ PAGE STYLE-----------------------------------------------------------------
     flex-direction: column;
 }
 
-.inicio--main-img img{
+.inicio--main-img {
     width: 100%;
-    height: 36rem;
+    height: 100%;
+}
+
+.faq-inicio-img .inicio--main-img img {
+    width: 70%;
+    /* height: 70%; */
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1.5rem;
     border-radius: 30px;
 }
 
@@ -160,8 +225,12 @@ FAQ PAGE STYLE-----------------------------------------------------------------
     text-decoration: none;
 }
 
-.list , .list--items {
-    margin-top: 50px;
+.list {
+    margin-top: 20px;
+}
+
+.list--items {
+    margin-top: 30px;
 }
 
 .question-pic {
@@ -178,6 +247,12 @@ FAQ PAGE STYLE-----------------------------------------------------------------
     text-align: center;
 }
 
+.answer-area {
+    margin-left: 60px;
+    margin-right: 60px; 
+}
+
+
 .answer-area--article p{
     text-align: center;
 }
@@ -189,7 +264,42 @@ FAQ PAGE STYLE-----------------------------------------------------------------
     border-radius: 30px;
 }
 
+.faq-inicio-img inicio--main-img{
+    grid-area: imagen-inicio-faq;
+}
 
+.faq-inicio-img h1--dentro-img{
+    grid-area: preguntas;
+}
+
+
+
+.answer-area {
+    grid-area: respuesta;
+}
+
+body {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "nav"
+    "imagen-inicio-faq"
+    "preguntas"
+    "respuesta"
+    "footer";
+}
+
+@media (min-width:900px) {
+    .faq-inicio-img { 
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)) 
+    }
+    .answer-area {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
 
 /*
 
@@ -198,25 +308,28 @@ PRODUCTOS PAGE STYLE------------------------------------------------------------
 */
 
 
-.main-img img{
+.main-img-prod {
     width: 100%;
-    height: 40em;
 }
 
-.section-absolute {
-    color: rgb(231, 233, 240);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.main-img-prod .initial-img-prod{
+    width: 100%;
+    height: 70%;
 }
 
-.list-prods ol a{
-    color: aqua;
+
+
+.section-absolute ,.list-prods ol a,.prod-h1 h1 , .prod-subt h3{
+    color: rgb(119, 2, 143);
 }
 
-.prod-h1 h1 , .prod-subt h3{
-    color: aqua;
+.section-absolute .list-prods ol a{
+    border: #16183d;
+    border: 1px solid #a881af;
+    border-radius: .5rem;
+    padding: 3px;
+    background-color: #a881af;
+    color: #ffffff;
 }
 
 .prod-h1 {
@@ -260,6 +373,7 @@ PRODUCTOS PAGE STYLE------------------------------------------------------------
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
+    padding: 2rem;
   }
   
 .grid--item{
@@ -277,7 +391,7 @@ PRODUCTOS PAGE STYLE------------------------------------------------------------
   
 .grid--item button {
     margin-top: auto;
-    background: black;
+    background: #a881af;
     color: white;
     padding: 0.5rem;
     border: none;
@@ -286,23 +400,86 @@ PRODUCTOS PAGE STYLE------------------------------------------------------------
     cursor: pointer;
   }
 
+.main-img-prod{
+    grid-area: imagen-inicio-prod;
+}
+
+.section-absolute{
+    grid-area: seleccion-areas;
+}
+
+.grid-cont {
+    grid-area: container-prods;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "imagen-inicio-prod"
+    "seleccion-areas"
+    "container-prods"
+    "footer";
+}
+
+@media (min-width:768px) {
+    .main-img-prod {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .main-img-prod .initial-img-prod{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        border-radius: 5rem;
+    }
+}
+
+@media (min-width:900px) {
+    .main-img-prod {
+        width: 100%;
+    }
+    .main-img-prod .initial-img-prod{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/* @media (min-width:1000px) {
+    .main-img-prod {
+        width: 100%;
+    }
+    .main-img-prod .initial-img-prod{
+        width: 100%;
+        height: 100%;
+    }
+} */
+
+
+
+
+
 /*
 
 NOSOTROS PAGE STYLE-----------------------------------------------------------------
 
 */
 
-.main-img img{
+.main-img-nos {
     width: 100%;
     position: relative;
-    display: inline-block;
-    text-align: center;
+}
+
+.main-img-nos img{
+    width: 100%;
+    height: 100%;
 }
 
 .h1-dentro-img {
-    color: rgb(231, 233, 240);
+    color: rgb(0, 0, 0);
     position: absolute;
-    top: 50%;
+    top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -319,6 +496,34 @@ NOSOTROS PAGE STYLE-------------------------------------------------------------
     text-align: center;
 }
 
+.main-img-nos{
+    grid-area: imagen-inicio-nos;
+}
+
+.main-sec-nos{
+    grid-area: section-nos;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "imagen-inicio-nos"
+    "section-nos"
+    "footer";
+}
+
+@media (min-width:768px) {
+    .h1-dentro-img h1 {
+        font-weight: bolder;
+    }
+    .h1-dentro-img {
+        top: 65%;
+    }
+}
+
+
 /*
 
 CONTACTO PAGE STYLE-----------------------------------------------------------------
@@ -328,6 +533,7 @@ CONTACTO PAGE STYLE-------------------------------------------------------------
 .form-contact {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .form--fieldset {
@@ -335,22 +541,46 @@ CONTACTO PAGE STYLE-------------------------------------------------------------
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     border-radius: 50px;
 }
 
-.name-input , .apellido-input, .mail-input, .asunto-input{
-    width: 50%;
+.name-input , .apellido-input, .mail-input, .asunto-input {
+    width: 70%;
     margin: 0 auto;
     border-radius: 1rem;
 }
 
+
 .send--button, .clean--button {
-    width: 30%;
     margin: auto;
-    border-radius: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .form--label, .form--title {
     color: rgb(188, 248, 240);
+}
+
+@media (min-width:768px) {
+    .form--fieldset {
+        width: 70%;
+    }
+}
+
+.main-img-nos{
+    grid-area: imagen-inicio-nos;
+}
+
+.main-sec-nos{
+    grid-area: section-nos;
+}
+
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "form-contact"
+    "footer";
 }
