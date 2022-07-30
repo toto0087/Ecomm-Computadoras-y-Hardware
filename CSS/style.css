@@ -542,7 +542,7 @@ NOSOTROS PAGE STYLE-------------------------------------------------------------
 }
 
 .historia--p {
-    padding-bottom: 14rem;
+    padding-bottom: 3rem;
 }
 
 .mission--p h2, p{
@@ -624,8 +624,8 @@ CONTACTO PAGE STYLE-------------------------------------------------------------
 }
 
 form { 
-    padding-top: 4rem;
-    padding-bottom: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 @media (min-width:768px) {
