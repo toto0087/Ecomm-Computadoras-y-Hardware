@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 1</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper-form">
+        <header>
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="/imagenes/logo_200x200.png" alt="" width="30" height="24">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">Preguntas y Respuestas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+    <form action="" class="form-contact">
+        <fieldset class="form--fieldset">
+            <h1 class="form--title">Formulario de contacto:</h1>
+            <label for="nombre" class="form--label">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="name-input">
+            
+            <label for="apellido" class="form--label">Apellido:</label>
+            <input type="text" name="apellido" id="appellido" class="apellido-input">
+            
+            <label for="mail" class="form--label">Mail:</label>
+            <input type="email" name="email" id="email" class="mail-input">
+            <br>
+            <label for="opcion" class="form--label">Elija el asunto del mensaje</label>
+            <br>
+            <select name="asunto" id="asunto" class="asunto-input">
+                <option value="L">No llega mi pedido</option>
+                <option value="M">Garantia</option>
+                <option value="S">Devoluciones</option>
+            </select>
+            <br>
+            <label for="mensaje" class="form--label">Escriba su mensaje</label>
+            <textarea placeholder="Mensaje..." class="textarea" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Enviar formulario" class="send--button">
+            <br>
+            <input type="reset" value="Limpiar formulario" class="clean--button">
+
+            <br>
+            <br>
+
+            <label class="form--label">Acepta los terminos y condiciones</label>
+            <input type="checkbox" name="acepta" value="1">
+
+        </fieldset>
+    </form>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted"><strong> &copy; 2022 Tiempo Gamer, Inc </strong></p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Instagram</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Twitter</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Facebook</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Snapchat</a></li>
+        </ul>
+      </footer>
+    </div>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

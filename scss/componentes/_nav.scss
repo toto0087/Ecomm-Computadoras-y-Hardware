@@ -1,0 +1,24 @@
+
+header  {
+  width: $width;
+  height: 4rem;
+  background-color: #ffffff;
+  text-align: center;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+
+  nav { 
+    width: $width;
+  }
+
+    .navbar-brand {
+      width: 50%;
+    
+
+      img{
+      width: 10%;
+      height: 10%;
+    }
+  }
+}
