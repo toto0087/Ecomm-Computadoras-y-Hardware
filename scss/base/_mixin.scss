@@ -1,0 +1,8 @@
+@mixin formFieldset($text-direction) {
+    background-color: rgb(31, 32, 33);
+    text-align: $text-direction;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 50px;
+}

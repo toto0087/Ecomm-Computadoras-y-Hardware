@@ -2,15 +2,19 @@
     width: map-get($measures, width-100);
 }
 
+.height-extend {
+    height: map-get($measures, height-100);;
+}
+
 
 .main-img-nos {
     width: 100%;
     position: relative;
   }
   
-  .main-img-nos img{
+  .main-img-nos img {
     @extend .width-extend;
-    height: 100%;
+    @extend .height-extend;
   }
   
   .h1-dentro-img {

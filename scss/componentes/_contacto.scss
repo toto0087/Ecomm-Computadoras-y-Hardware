@@ -6,12 +6,7 @@
   }
   
   .form--fieldset {
-    background-color: rgb(31, 32, 33);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 50px;
+    @include formFieldset(center)
   }
   
   .name-input , .apellido-input, .mail-input, .asunto-input {

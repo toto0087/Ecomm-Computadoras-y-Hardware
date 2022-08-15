@@ -153,12 +153,7 @@ header .navbar-brand img {
     padding-top: 3rem;
   }
 }
-.main-img-prod {
-  width: 100%;
-}
-
-.main-img-prod .initial-img-prod {
-  width: 100%;
+.initial-img-prod {
   height: 70%;
 }
 
@@ -283,17 +278,17 @@ header .navbar-brand img {
     height: 50%;
   }
 }
-.width-extend, .main-img-nos img {
+.width-extend, .main-img-nos img, .main-img-prod, .initial-img-prod {
   width: 100%;
+}
+
+.height-extend, .main-img-nos img {
+  height: 100%;
 }
 
 .main-img-nos {
   width: 100%;
   position: relative;
-}
-
-.main-img-nos img {
-  height: 100%;
 }
 
 .h1-dentro-img {

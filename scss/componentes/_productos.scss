@@ -1,11 +1,11 @@
 
 
 .main-img-prod {
-    width: 100%;
+    @extend .width-extend;
   }
   
-  .main-img-prod .initial-img-prod{
-    width: 100%;
+.initial-img-prod{
+    @extend .width-extend;
     height: 70%;
   }
   
