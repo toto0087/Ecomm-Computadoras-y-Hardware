@@ -1,0 +1,140 @@
+
+
+.main-img-prod {
+    width: 100%;
+  }
+  
+  .main-img-prod .initial-img-prod{
+    width: 100%;
+    height: 70%;
+  }
+  
+  
+  
+  .section-absolute ,.list-prods ol a,.prod-h1 h1 , .prod-subt h3{
+    color: rgb(119, 2, 143);
+  }
+  
+  .section-absolute .list-prods ol a{
+    border: #16183d;
+    border: map-get($colors , color-purple);
+    border-radius: .5rem;
+    padding: 3px;
+    background-color: map-get($colors , color-purple);
+    color: map-get($colors , color-white);
+  }
+  
+  .prod-h1 {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .prod-h1 h1{
+    font-weight: bolder;
+    font-size: large;
+  }
+  
+  .prod-subt {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .list-prods a {
+    text-decoration: none;
+  }
+  
+  .list-prods ol {
+    margin-top: 10px;
+  }
+  
+  .list-prods {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .section-separator {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .grid-cont {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .grid--item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  
+  .grid--item img {
+    order: -1;
+    align-self: center;
+  }
+  
+  .grid--item button {
+    margin-top: auto;
+    background: #a881af;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .main-img-prod{
+    grid-area: imagen-inicio-prod;
+  }
+  
+  .section-absolute{
+    grid-area: seleccion-areas;
+  }
+  
+  .grid-cont {
+    grid-area: container-prods;
+  }
+  
+  .wrapper-prods {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "imagen-inicio-prod"
+    "seleccion-areas"
+    "container-prods"
+    "footer";
+  }
+  
+  @media (min-width:768px) {
+    .main-img-prod {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 4rem;
+    }
+    .main-img-prod .initial-img-prod{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        border-radius: 5rem;
+    }
+  }
+  
+  @media (min-width:900px) {
+    .main-img-prod {
+        width: 100%;
+    }
+    .main-img-prod .initial-img-prod{
+        width: 50%;
+        height: 50%;
+    }
+  }

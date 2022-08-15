@@ -1,0 +1,66 @@
+.width-extend {
+    width: map-get($measures, width-100);
+}
+
+
+.main-img-nos {
+    width: 100%;
+    position: relative;
+  }
+  
+  .main-img-nos img{
+    @extend .width-extend;
+    height: 100%;
+  }
+  
+  .h1-dentro-img {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .historia--p {
+    padding-bottom: 3rem;
+  }
+  
+  .mission--p h2, p{
+    text-align: center;
+  }
+  
+  .mission--p h2, p{
+    text-align: center;
+  }
+  
+  .historia--p h2, p{
+    text-align: center;
+  }
+  
+  .main-img-nos{
+    grid-area: imagen-inicio-nos;
+  }
+  
+  .main-sec-nos{
+    grid-area: section-nos;
+  }
+  
+  
+  .wrapper {
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "imagen-inicio-nos"
+    "section-nos"
+    "footer";
+  }
+  
+  @media (min-width:768px) {
+    .h1-dentro-img h1 {
+        font-weight: bolder;
+    }
+    .h1-dentro-img {
+        top: 65%;
+    }
+  }
+  
