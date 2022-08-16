@@ -278,7 +278,7 @@ header .navbar-brand img {
     height: 50%;
   }
 }
-.width-extend, .main-img-nos img, .main-img-prod, .initial-img-prod {
+.width-extend, .form-contact, .main-img-nos img, .main-img-prod, .initial-img-prod {
   width: 100%;
 }
 
@@ -339,7 +339,6 @@ header .navbar-brand img {
 .form-contact {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .form--fieldset {

@@ -6,3 +6,7 @@
     width: 100%;
     border-radius: 50px;
 }
+
+@mixin widthLocator($width-random) {
+    width: $width-random;
+}
