@@ -3,43 +3,41 @@
 }
 
 .height-extend {
-    height: map-get($measures, height-100);;
+    height: map-get($measures, height-100);
 }
 
 
 .main-img-nos {
     width: 100%;
     position: relative;
+      img {
+        @extend .height-extend;
+        @extend .width-extend;
+    }
+
+    .h1-dentro-img {
+      color: rgb(0, 0, 0);
+      position: absolute;
+      top: 67%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   
-  .main-img-nos img {
-    @extend .width-extend;
-    @extend .height-extend;
-  }
   
-  .h1-dentro-img {
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 67%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   
   .historia--p {
     padding-bottom: 3rem;
+
+    h2, p{
+     text-align: center;
+   }
   }
   
   .mission--p h2, p{
     text-align: center;
   }
   
-  .mission--p h2, p{
-    text-align: center;
-  }
-  
-  .historia--p h2, p{
-    text-align: center;
-  }
   
   .main-img-nos{
     grid-area: imagen-inicio-nos;

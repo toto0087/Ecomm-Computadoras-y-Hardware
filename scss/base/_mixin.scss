@@ -10,3 +10,7 @@
 @mixin widthLocator($width-random) {
     width: $width-random;
 }
+
+@mixin heightLocator($height-random) {
+    height: $height-random;
+}

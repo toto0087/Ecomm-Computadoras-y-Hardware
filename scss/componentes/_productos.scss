@@ -39,20 +39,20 @@
     text-align: center;
   }
   
-  .list-prods a {
-    text-decoration: none;
-  }
-  
-  .list-prods ol {
-    margin-top: 10px;
-  }
-  
   .list-prods {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     flex-direction: column;
+    
+    .list-prods ol {
+      margin-top: 10px;
+            
+      .list-prods a {
+        text-decoration: none;
+      }
+    }
   }
   
   .section-separator {
@@ -66,32 +66,32 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     padding: 2rem;
+
+    .grid--item {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 1rem;
+      padding: 2rem;
+
+      img {
+        order: -1;
+        align-self: center;
+      }
+
+      button {
+       margin-top: auto;
+       background: map-get($colors , color-purple);
+       color: white;
+       padding: 0.5rem;
+       border: none;
+       border-radius: 1rem;
+       font-size: 1.2rem;
+       cursor: pointer;
+     }
+    }
   }
-  
-  .grid--item{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 1rem;
-    padding: 2rem;
-  }
-  
-  .grid--item img {
-    order: -1;
-    align-self: center;
-  }
-  
-  .grid--item button {
-    margin-top: auto;
-    background: #a881af;
-    color: white;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
+
   .main-img-prod{
     grid-area: imagen-inicio-prod;
   }
@@ -116,14 +116,14 @@
   
   @media (min-width:768px) {
     .main-img-prod {
-        width: 100%;
+        width: $width-100;
         display: flex;
         justify-content: center;
         padding-top: 4rem;
     }
     .main-img-prod .initial-img-prod{
         width: 70%;
-        height: 100%;
+        height: $width-100;
         display: flex;
         border-radius: 5rem;
     }
@@ -131,10 +131,10 @@
   
   @media (min-width:900px) {
     .main-img-prod {
-        width: 100%;
+        width: $width-100
     }
     .main-img-prod .initial-img-prod{
-        width: 50%;
-        height: 50%;
+        width: $width-50;
+        height: $height-50;
     }
   }

@@ -19,61 +19,38 @@ body {
     text-align: center;
     height: 35%;
     width: $width-100;
-  }
-  
-  .inicio-img .main-img {
-    background-image: image();
-    width: $width-100;
-    height: $height-100;
-  }
-  
-  
-  .H1-dentro-img {
-    color: $color-white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .H1-dentro-img h1 {
-    font-size: 2rem;
-  } 
+
+    .main-img {
+     background-image: image();
+     width: $width-100;
+     height: $height-100;
+   }
+
+   .H1-dentro-img {
+     color: $color-white;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 2rem;
+   }
+
+}
   
   .initial-vid {
     display: flex;
     justify-content: center;
     width: 100%;
+
+    iframe {
+      width: 70%;
+      @include heightLocator(100%)
   }
+}
   
-  .initial-vid iframe{
-    width: 70%;
-    height: 100%;
-  }
-  
-  
-  .h2-parrafo {
-    padding: 20px;
-    margin: 20px;
-    border-style: solid;
-    border-radius: 50px;
-  }
-  
-  .initial__h2 , .initial__p{
+
+  .initial__h2 {
     text-align: center;
-  }
-  
-  .faq {
-    margin-top: 340px;
-  }
-  .prod {
-    margin-top: 360px;
-  }
-  
-  
-  
-  .h3-parrafo {
-    background-color: $color-purple;
   }
   
   .card {
