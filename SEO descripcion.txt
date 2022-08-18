@@ -1,0 +1,11 @@
+Etiqueta de Keyword agregado 
+Etiqueta de description agregado 
+Title agregado con frase extra
+Meta etiquetas agregadas en cada pagina 
+Meta etiquetas adaptadas a cada pagina
+Titulo adaptado a cada pag 
+Imagenes optimizadas
+Alt de imagenes agregado (Decripcion breve de imagenes)
+maximum-scale=5.0 agregado en viewport para que los usuarios puedan hacer zoom
+Solo 1 etiqueta h1 en cada pag
+
