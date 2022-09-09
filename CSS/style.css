@@ -131,7 +131,7 @@ header .navbar-brand img {
   height: 70%;
 }
 
-.section-absolute, .list-prods ol a, .prod-h1 h1, .section-absolute__prod-subt, h3 {
+.section-absolute, .list-prods ol a, .prod-h1 h1, .prod-subt, h3 {
   color: rgb(119, 2, 143);
   text-align: center;
 }
@@ -324,7 +324,7 @@ header .navbar-brand img {
   border-radius: 10px;
   padding: 1rem;
 }
-.form--fieldset .form--label, .form--fieldset .form-contact__title {
+.form--fieldset .form--label, .form--fieldset .form--title {
   color: rgb(188, 248, 240);
 }
 
@@ -449,5 +449,7 @@ nav {
 footer {
   grid-area: footer;
 }
+
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
