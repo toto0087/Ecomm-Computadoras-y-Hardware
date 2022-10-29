@@ -23,6 +23,25 @@
               <a class="navbar-brand" href="#">
                 <img src="/imagenes/logo_200x200.png" alt="Logo de Tiempo Gamer,computacion profesional" width="30" height="24">
               </a>
+
+              <li class="submenu">
+                <img src="../imagenes/cart.png" id="img-carrito">
+                <div id="carrito" class="carrito">
+                        <table id="lista-carrito" class="u-full-width lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                </div>
+              </li>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -70,371 +89,308 @@
             </article>
         </section>
 
-        <div class="section-separator" id="equipos"><h4>Seccion 1:Equipos/Ordenadores</h4></div>
+      <div class="lista-productos">
 
-        <section data-aos="fade-right" class="grid-cont">
-            <!--GRID CONTAINER-->
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/gabinete-gamer.png" alt="Equipo en venta ,pc armado gamer" class="img--prod">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/gabinete-gamer2.png" alt="Equipo en venta ,pc armado gamer">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/gabinete-gamer3.png" alt="Equipo en venta ,pc armado gamer">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img img src="/imagenes/gabinete-gamer4_files.png" alt="Equipo en venta ,pc armado gamer">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/gabinete-gamer5_files.png" alt="Equipo en venta ,pc armado gamer">
-              <button>COMPRAR</button>
-            </article>
-          </section>
+          <div class="section-separator" id="equipos"><h4>Seccion 1:Equipos/Ordenadores</h4></div>
 
-          <div class="section-separator" id="notebooks"><h4>Seccion 2:Notebooks</h4></div>
+          <section data-aos="fade-right" class="grid-cont">
+              <!--GRID CONTAINER-->
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/gabinete-gamer.png" alt="Equipo en venta ,pc armado gamer" class="img--prod">
+                <button data-id="1" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/gabinete-gamer2.png" alt="Equipo en venta ,pc armado gamer">
+                <button data-id="2" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/gabinete-gamer3.png" alt="Equipo en venta ,pc armado gamer">
+                <button data-id="3" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img img src="/imagenes/gabinete-gamer4_files.png" alt="Equipo en venta ,pc armado gamer">
+                <button data-id="4" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/gabinete-gamer5_files.png" alt="Equipo en venta ,pc armado gamer">
+                <button data-id="5" class="agregar-carrito">COMPRAR</button>
+              </article>
+            </section>
 
-        <section data-aos="fade-left" class="grid-cont">
-            <!--GRID CONTAINER-->
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/notebook1.png" alt="Equipo en venta ,nootebook gamer-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/notebook2.png" alt="Equipo en venta ,nootebook gamer-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/notebook3.png" alt="Equipo en venta ,nootebook gamer-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/notebook4.png" alt="Equipo en venta ,nootebook gamer-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/notebook5.png" alt="Equipo en venta ,nootebook gamer-oficina">
-              <button>COMPRAR</button>
-            </article>
-          </section>
+            <div class="section-separator" id="notebooks"><h4>Seccion 2:Notebooks</h4></div>
 
-          <div class="section-separator" id="hardware"><h4>Seccion 3:Harware</h4></div>
+          <section data-aos="fade-left" class="grid-cont">
+              <!--GRID CONTAINER-->
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/notebook1.png" alt="Equipo en venta ,nootebook gamer-oficina">
+                <button data-id="6" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/notebook2.png" alt="Equipo en venta ,nootebook gamer-oficina">
+                <button data-id="7" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/notebook3.png" alt="Equipo en venta ,nootebook gamer-oficina">
+                <button data-id="8" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/notebook4.png" alt="Equipo en venta ,nootebook gamer-oficina">
+                <button data-id="9" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/notebook5.png" alt="Equipo en venta ,nootebook gamer-oficina">
+                <button data-id="10" class="agregar-carrito">COMPRAR</button>
+              </article>
+            </section>
 
-        <section data-aos="fade-right" class="grid-cont">
-            <!--GRID CONTAINER-->
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/hardware1.png" alt="Equipo en venta ,hardware para PC,tarjeta grafica">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/hardware2.png" alt="Equipo en venta ,hardware para PC,tarjeta grafica">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/hardware3.png" alt="Equipo en venta ,hardware para PC,RAM">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/hardware4.png" alt="Equipo en venta ,hardware para PC,RAM">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/hardware5.png" alt="Equipo en venta ,hardware para PC,motherboard">
-              <button>COMPRAR</button>
-            </article>
-          </section>
+            <div class="section-separator" id="hardware"><h4>Seccion 3:Harware</h4></div>
 
-          <div class="section-separator" id="consolas"><h4>Seccion 4:Consolas</h4></div>
+          <section data-aos="fade-right" class="grid-cont">
+              <!--GRID CONTAINER-->
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/hardware1.png" alt="Equipo en venta ,hardware para PC,tarjeta grafica">
+                <button data-id="11" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/hardware2.png" alt="Equipo en venta ,hardware para PC,tarjeta grafica">
+                <button data-id="12" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/hardware3.png" alt="Equipo en venta ,hardware para PC,RAM">
+                <button data-id="13" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/hardware4.png" alt="Equipo en venta ,hardware para PC,RAM">
+                <button data-id="14" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/hardware5.png" alt="Equipo en venta ,hardware para PC,motherboard">
+                <button data-id="15" class="agregar-carrito">COMPRAR</button>
+              </article>
+            </section>
 
-        <section data-aos="fade-left" class="grid-cont">
-            <!--GRID CONTAINER-->
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/consolas1.png" alt="Equipo en venta ,consola para gaming">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/consolas2.png" alt="Equipo en venta ,consola para gaming">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/consolas3.png" alt="Equipo en venta ,consola para gaming">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/consolas4.png" alt="Equipo en venta ,consola para gaming">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/consolas5.png" alt="Equipo en venta ,consola para gaming">
-              <button>COMPRAR</button>
-            </article>
-          </section>
+            <div class="section-separator" id="consolas"><h4>Seccion 4:Consolas</h4></div>
 
-          <div class="section-separator" id="monitores"><h4>Seccion 5:Monitores</h4></div>
+          <section data-aos="fade-left" class="grid-cont">
+              <!--GRID CONTAINER-->
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/consolas1.png" alt="Equipo en venta ,consola para gaming">
+                <button data-id="16" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/consolas2.png" alt="Equipo en venta ,consola para gaming">
+                <button data-id="17" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/consolas3.png" alt="Equipo en venta ,consola para gaming">
+                <button data-id="18" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/consolas4.png" alt="Equipo en venta ,consola para gaming">
+                <button data-id="19" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/consolas5.png" alt="Equipo en venta ,consola para gaming">
+                <button data-id="20" class="agregar-carrito">COMPRAR</button>
+              </article>
+            </section>
 
-        <section data-aos="fade-right" class="grid-cont">
-            <!--GRID CONTAINER-->
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/monitor1.png" alt="Equipo en venta ,monitor para gaming-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/monitor2.png" alt="Equipo en venta ,monitor para gaming-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/monitor3.png" alt="Equipo en venta ,monitor para gaming-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/monitor4.png" alt="Equipo en venta ,monitor para gaming-oficina">
-              <button>COMPRAR</button>
-            </article>
-          
-            <article class="grid--item">
-              <!--GRID ITEM-->
-              <h2>Lorem, ipsum dolor.</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
-              <ul>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-                <li>Lorem.</li>
-              </ul>
-              <img src="/imagenes/monitor5.png" alt="Equipo en venta ,monitor para gaming-oficina">
-              <button>COMPRAR</button>
-            </article>
-          </section>
+            <div class="section-separator" id="monitores"><h4>Seccion 5:Monitores</h4></div>
 
+          <section data-aos="fade-right" class="grid-cont">
+              <!--GRID CONTAINER-->
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/monitor1.png" alt="Equipo en venta ,monitor para gaming-oficina">
+                <button data-id="21" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/monitor2.png" alt="Equipo en venta ,monitor para gaming-oficina">
+                <button data-id="22" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/monitor3.png" alt="Equipo en venta ,monitor para gaming-oficina">
+                <button data-id="23" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/monitor4.png" alt="Equipo en venta ,monitor para gaming-oficina">
+                <button data-id="24" class="agregar-carrito">COMPRAR</button>
+              </article>
+            
+              <article class="grid--item">
+                <!--GRID ITEM-->
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore qui tenetur dolorem est commodi!</p>
+                <p class="precio">
+                  <span>$30</span>
+                </p>
+                <img src="/imagenes/monitor5.png" alt="Equipo en venta ,monitor para gaming-oficina">
+                <button data-id="25" class="agregar-carrito">COMPRAR</button>
+              </article>
+            </section>
+      </div>
     </main>
 
     <div class="container">
@@ -456,6 +412,7 @@
     </div>
 </div>
 </div>
+<script src="/carrito.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
